@@ -48,32 +48,6 @@ public class PostController {
 
 }
 
-
-//    // 게시글 생성
-//    @PostMapping("/add")
-//    public ResponseEntity<PostDTO> createPost(@RequestBody PostDTO postDTO) {
-//        PostDTO createdPost = postService.createPost(postDTO);
-//        return new ResponseEntity<>(createdPost, HttpStatus.CREATED);
-//    }
-//
-//    // 게시글 단건 조회
-//    @GetMapping("/{id}")
-//    public ResponseEntity<PostDTO> getPostById(@PathVariable Long id) {
-//        return ResponseEntity.ok(postService.getPostById(id));
-//    }
-//
-//    // 게시글 전체 목록 조회
-//    @GetMapping
-//    public ResponseEntity<List<PostDTO>> getAllPosts() {
-//        return ResponseEntity.ok(postService.getAllPosts());
-//    }
-//
-//    // 특정 게시판의 게시글 조회
-//    @GetMapping("/board/{boardType}")
-//    public ResponseEntity<List<PostDTO>> getPostsByBoardType(@PathVariable String boardType) {
-//        return ResponseEntity.ok(postService.getPostsByBoardType(boardType));
-//    }
-//
 //    @DeleteMapping("/{id}")
 //    public ResponseEntity<String> deletePost(@PathVariable Long postId) {
 //        // 게시글 ID를 받아 해당 게시글을 삭제하고 성공 여부를 반환

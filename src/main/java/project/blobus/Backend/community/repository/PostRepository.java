@@ -19,8 +19,6 @@ public interface PostRepository extends JpaRepository<Post, Long> {
     // boardType 필터만 사용하는 간단한 메소드
     List<Post> findByBoardType(String boardType);
 
-    // Pageable + Specification을 통한 동적 쿼리 처리
-    Page<Post> findAll(Specification<Post> spec, Pageable pageable);
 
     // PostListDTO를 반환하는 쿼리 정의
     @Query("SELECT new project.blobus.Backend.community.dto.PostListDTO(p.id, p.title, p.createdAt, p.authorId) " +
@@ -29,6 +27,8 @@ public interface PostRepository extends JpaRepository<Post, Long> {
             "AND (:userType IS NULL OR p.userType = :userType)")
     Page<PostListDTO> findPostListDtos(Post.BoardType boardType, Post.UserType userType, Pageable pageable);
 
+//    // Pageable + Specification을 통한 동적 쿼리 처리
+//    Page<Post> findAll(Specification<Post> spec, Pageable pageable);
 
 
 }
