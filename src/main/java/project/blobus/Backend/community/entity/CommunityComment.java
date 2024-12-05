@@ -31,7 +31,7 @@ public class CommunityComment {
 
     @Column(nullable = false)
     // 댓글 작성자의 ID, null 값 허용 불가
-    private Long authorId;
+    private String authorId;
 
     @Column(nullable = false, columnDefinition = "TEXT")
     private String content; // 댓글 내용

@@ -13,6 +13,9 @@ public class CommentServiceImpl implements CommentService {
 
     @Autowired
     private CommentRepository commentRepository;
+    private PostService postService;
+//    private Adm
+
 
     @Override
     public void create(Post post, String content) {

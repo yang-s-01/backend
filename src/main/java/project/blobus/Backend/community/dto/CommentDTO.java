@@ -15,7 +15,7 @@ public class CommentDTO {
 
     private Long id; // 댓글 ID
 
-    private Long authorId; // 작성자 ID
+    private String authorId; // 작성자 ID
 
     private String content; // 댓글 내용
 
